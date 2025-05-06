@@ -1,0 +1,87 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive JS Playground</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>JavaScript Interactive Playground</h1>
+    </header>
+
+    <main>
+        <!-- Event Handling Section -->
+        <section id="event-section">
+            <h2>Event Handling</h2>
+            <button id="click-me">Click Me!</button>
+            <div id="hover-area" class="hover-box">Hover Over Me</div>
+            <input type="text" id="keypress-input" placeholder="Type something...">
+            <p id="keypress-output"></p>
+            <div id="secret-trigger">Double click me for a secret!</div>
+        </section>
+
+        <!-- Interactive Elements Section -->
+        <section id="interactive-section">
+            <h2>Interactive Elements</h2>
+            <button id="color-changer">Change My Color</button>
+            
+            <div class="image-gallery">
+                <img src="https://images.pexels.com/photos/1525041/pexels-photo-1525041.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&dpr=1" alt="Mountain landscape" class="active">
+                <img src="https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&dpr=1" alt="Ocean waves">
+                <img src="https://images.pexels.com/photos/414102/pexels-photo-414102.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&dpr=1" alt="Forest path">
+                <div class="gallery-controls">
+                    <button id="prev-btn">Previous</button>
+                    <button id="next-btn">Next</button>
+                </div>
+            </div>
+            
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-btn">Section 1</button>
+                    <div class="accordion-content">
+                        <p>Hello, My name is Mutebwa Charles from Uganda Martyrs University in Uganda. I love making friends and staying with people who make me happy</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-btn">Section 2</button>
+                    <div class="accordion-content">
+                        <p>Hello, how are you? did you visit? section one yet?? if yes thank you so much.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form Validation Section -->
+        <section id="form-section">
+            <h2>Form Validation</h2>
+            <form id="user-form">
+                <div class="form-group">
+                    <label for="name">Name (required):</label>
+                    <input type="text" id="name" required>
+                    <span class="error-message"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email">
+                    <span class="error-message"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password (min 8 chars):</label>
+                    <input type="password" id="password">
+                    <span class="error-message"></span>
+                    <div class="password-strength"></div>
+                </div>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
